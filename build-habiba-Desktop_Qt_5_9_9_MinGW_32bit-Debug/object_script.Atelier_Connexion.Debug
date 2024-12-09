@@ -1,0 +1,17 @@
+INPUT(
+./debug\arduino.o
+./debug\client.o
+./debug\commande.o
+./debug\employe.o
+./debug\main.o
+./debug\connection.o
+./debug\mainwin.o
+./debug\mainwindow.o
+./debug\randomstringgenerator.o
+./debug\smtp.o
+./debug\smtp2.o
+./debug\qrc_Resources.o
+./debug\moc_mainwin.o
+./debug\moc_mainwindow.o
+./debug\moc_smtp2.o
+);

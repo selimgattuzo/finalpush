@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1576</width>
+    <height>827</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>200</y>
+      <width>281</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/img/img/LOG-removebg-preview.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-10</y>
+      <width>1391</width>
+      <height>811</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/img/img/61803.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>-20</y>
+      <width>631</width>
+      <height>811</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">*{/* styles.qss */
+	border-image: url(:/img/img/61803.jpg);
+}
+/* Set the default font color to dark for readability */
+* {
+    color: #2c3e50; /* Dark gray text for better contrast */
+    font-family: Arial, sans-serif; /* Clean, readable font */
+}
+
+/* Style for the main window background */
+QWidget {
+    background-color: #D6EAF8; /* Light blue background */
+}
+
+/* Style for input boxes (assuming they are QLineEdit or similar) */
+QLineEdit {
+    background-color: #ffffff; /* White background for input fields */
+    border: 1px solid #2c3e50; /* Dark gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 8px;
+    color: #2c3e50; /* Dark text */
+    font-size: 14px;
+}
+
+/* Style for input boxes (focused state) */
+QLineEdit:focus {
+    border: 1px solid #2980b9; /* Blue border on focus */
+    background-color: #eaf2f7; /* Light blue background on focus */
+}
+
+/* Style for push buttons (assuming they are QPushButtons or similar) */
+QPushButton {
+    background-color: #2980b9; /* Medium blue for buttons */
+    border: 1px solid #1f618d; /* Darker blue border for buttons */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px; /* Adjusted padding */
+    color: white; /* White text */
+    font-size: 14px; /* Slightly larger font for readability */
+}
+
+/* Style for push buttons on hover */
+QPushButton:hover {
+    background-color: #1f618d; /* Darker blue on hover */
+}
+
+/* Style for push buttons when pressed */
+QPushButton:pressed {
+    background-color: #154360; /* Even darker blue when pressed */
+}
+
+/* Style for QStackedWidget */
+QStackedWidget {
+    background-color: #ffffff; /* White background */
+    border: 2px solid #BDC3C7; /* Light gray border */
+    border-radius: 10px;
+
+}
+
+/* Style for dialog windows */
+QDialog {
+    background-color: #ffffff; /* White background for dialogs */
+    border: 1px solid #2980b9; /* Blue border for dialogs */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px;
+    color: #2c3e50; /* Dark text for readability */
+}
+
+/* Style for labels */
+QLabel {
+    color: #2c3e50; /* Dark gray text for labels */
+    font-size: 14px;
+}
+
+/* Style for combo boxes (QComboBox) */
+QComboBox {
+    background-color: #ffffff; /* White background for combo boxes */
+    border: 1px solid #2c3e50;
+    border-radius: 8px;
+    padding: 8px;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+/* Style for combo boxes when focused */
+QComboBox:focus {
+    border: 1px solid #2980b9;
+    background-color: #eaf2f7;
+}
+
+/* Style for table views (QTableView) */
+QTableView {
+    background-color: #ffffff; /* White background for tables */
+    border: 1px solid #ddd; /* Light border */
+    gridline-color: #ddd; /* Light grid lines */
+}
+
+QTableView QHeaderView {
+    background-color: #2980b9; /* Blue header background */
+    color: white; /* White text for table header */
+}
+
+/* Style for table rows */
+QTableView::item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Divider between rows */
+}
+
+/* Style for table rows when hovered */
+QTableView::item:hover {
+    background-color: #eaf4f0; /* Very light blue hover effect */
+}
+
+/* Style for scrollbars */
+QScrollBar {
+    background-color: #f1f1f1; /* Light background for scrollbars */
+    border: 1px solid #ddd; /* Light gray border */
+    width: 10px; /* Narrow scrollbar */
+}
+
+/* Style for the vertical scrollbar */
+QScrollBar:vertical {
+    border-radius: 5px;
+}
+
+/* Style for the horizontal scrollbar */
+QScrollBar:horizontal {
+    border-radius: 5px;
+}
+
+/* Style for progress bars */
+QProgressBar {
+    background-color: #f1f8f5; /* Very light green background */
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    text-align: center;
+    color: #2c3e50; /* Dark text */
+}
+
+QProgressBar::chunk {
+    background-color: #2980b9; /* Medium blue progress chunk */
+    border-radius: 5px;
+}
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLineEdit" name="lineEdituserr">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>270</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>260</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/img/img/user_747376.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditpasswordd">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>340</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>340</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/img/img/padlock.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="forgot_pb">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>440</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>forgot password</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonlog">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>440</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Log in</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QLineEdit" name="rcpt">
+      <property name="geometry">
+       <rect>
+        <x>197</x>
+        <y>211</y>
+        <width>261</width>
+        <height>36</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sendBtn">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>290</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Continue</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>110</y>
+        <width>481</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: black; /* Text color for labels */
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold if desired */
+    margin: 5px; /* Adjust margin as needed */
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Enter your email associated with your account and&lt;br/&gt;we'll send an emal to reset your password&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>121</x>
+        <y>211</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: black; /* Text color for labels */
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold if desired */
+    margin: 5px; /* Adjust margin as needed */
+}</string>
+      </property>
+      <property name="text">
+       <string>Email </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>20</y>
+        <width>261</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: black; /* Text color for labels */
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold if desired */
+    margin: 5px; /* Adjust margin as needed */
+}</string>
+      </property>
+      <property name="text">
+       <string>Reset password</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QLineEdit" name="codebt">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>200</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>10</y>
+        <width>191</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: black; /* Text color for labels */
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold if desired */
+    margin: 5px; /* Adjust margin as needed */
+}</string>
+      </property>
+      <property name="text">
+       <string>Verification</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="verify_pb">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>280</y>
+        <width>211</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Verify and Proceed</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>110</y>
+        <width>481</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: black; /* Text color for labels */
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold if desired */
+    margin: 5px; /* Adjust margin as needed */
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Please enter the 4 digit code that send to your email adresse&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>30</y>
+        <width>341</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: black; /* Text color for labels */
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold if desired */
+    margin: 5px; /* Adjust margin as needed */
+}</string>
+      </property>
+      <property name="text">
+       <string>Enter New Password</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="pas2">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>200</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="pas1">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>130</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cont_pb">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>260</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Continue</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>120</y>
+        <width>121</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: black; /* Text color for labels */
+    font-size: 15px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold if desired */
+    margin: 5px; /* Adjust margin as needed */
+}</string>
+      </property>
+      <property name="text">
+       <string>Old Password</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>200</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: black; /* Text color for labels */
+    font-size: 15px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold if desired */
+    margin: 5px; /* Adjust margin as needed */
+}</string>
+      </property>
+      <property name="text">
+       <string>New Password</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>140</y>
+      <width>651</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/img/img/LOG-removebg-preview.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1576</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

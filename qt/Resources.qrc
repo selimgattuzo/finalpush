@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/4400629.png</file>
+        <file>img/415260602_915404969798523_5173262210140723394_n.png</file>
+        <file>img/415287996_755433109383168_7582230033290630906_n.png</file>
+        <file>img/99484734571a59fde41fc712a14c32c3.png</file>
+        <file>img/padlock.png</file>
+        <file>img/user_747376.png</file>
+    </qresource>
+</RCC>
